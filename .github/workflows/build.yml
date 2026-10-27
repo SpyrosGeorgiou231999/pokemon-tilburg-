@@ -1,0 +1,19 @@
+name: Build Pokemon Tilburg
+on: [push, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install the GBA toolchain
+        run: sudo apt-get update && sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libnewlib-arm-none-eabi libpng-dev
+      - name: Get the Emerald decompilation
+        run: git clone --depth 1 https://github.com/pret/pokeemerald.git decomp
+      - name: Apply the Tilburg changes
+        run: cd decomp && git apply ../tilburg.diff
+      - name: Build
+        run: cd decomp && make modern -j$(nproc)
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pokemon-tilburg
+          path: decomp/pokeemerald_modern.gba
