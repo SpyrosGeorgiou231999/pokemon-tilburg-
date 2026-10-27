@@ -1,0 +1,897 @@
+diff --git a/data/maps/LittlerootTown/map.json b/data/maps/LittlerootTown/map.json
+index f5c8c78..8b0b913 100644
+--- a/data/maps/LittlerootTown/map.json
++++ b/data/maps/LittlerootTown/map.json
+@@ -32,7 +32,7 @@
+       "trainer_type": "TRAINER_TYPE_NONE",
+       "trainer_sight_or_berry_tree_id": "0",
+       "script": "LittlerootTown_EventScript_Twin",
+-      "flag": "0"
++      "flag": "FLAG_UNUSED_0x021"
+     },
+     {
+       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+@@ -45,7 +45,7 @@
+       "trainer_type": "TRAINER_TYPE_NONE",
+       "trainer_sight_or_berry_tree_id": "0",
+       "script": "LittlerootTown_EventScript_FatMan",
+-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_FAT_MAN"
++      "flag": "FLAG_UNUSED_0x021"
+     },
+     {
+       "graphics_id": "OBJ_EVENT_GFX_BOY_2",
+@@ -58,7 +58,7 @@
+       "trainer_type": "TRAINER_TYPE_NONE",
+       "trainer_sight_or_berry_tree_id": "0",
+       "script": "LittlerootTown_EventScript_Boy",
+-      "flag": "0"
++      "flag": "FLAG_UNUSED_0x021"
+     },
+     {
+       "local_id": "LOCALID_LITTLEROOT_MOM",
+@@ -72,7 +72,7 @@
+       "trainer_type": "TRAINER_TYPE_NONE",
+       "trainer_sight_or_berry_tree_id": "0",
+       "script": "LittlerootTown_EventScript_Mom",
+-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MOM_OUTSIDE"
++      "flag": "FLAG_UNUSED_0x021"
+     },
+     {
+       "graphics_id": "OBJ_EVENT_GFX_TRUCK",
+@@ -85,7 +85,7 @@
+       "trainer_type": "TRAINER_TYPE_NONE",
+       "trainer_sight_or_berry_tree_id": "0",
+       "script": "0x0",
+-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK"
++      "flag": "FLAG_UNUSED_0x021"
+     },
+     {
+       "graphics_id": "OBJ_EVENT_GFX_TRUCK",
+@@ -98,7 +98,7 @@
+       "trainer_type": "TRAINER_TYPE_NONE",
+       "trainer_sight_or_berry_tree_id": "0",
+       "script": "0x0",
+-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK"
++      "flag": "FLAG_UNUSED_0x021"
+     },
+     {
+       "local_id": "LOCALID_LITTLEROOT_RIVAL",
+@@ -112,7 +112,7 @@
+       "trainer_type": "TRAINER_TYPE_NONE",
+       "trainer_sight_or_berry_tree_id": "0",
+       "script": "0x0",
+-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_RIVAL"
++      "flag": "FLAG_UNUSED_0x021"
+     },
+     {
+       "local_id": "LOCALID_LITTLEROOT_BIRCH",
+@@ -126,115 +126,111 @@
+       "trainer_type": "TRAINER_TYPE_NONE",
+       "trainer_sight_or_berry_tree_id": "0",
+       "script": "0x0",
+-      "flag": "FLAG_HIDE_LITTLEROOT_TOWN_BIRCH"
+-    }
+-  ],
+-  "warp_events": [
+-    {
+-      "x": 14,
+-      "y": 8,
+-      "elevation": 0,
+-      "dest_map": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
+-      "dest_warp_id": "1"
+-    },
+-    {
+-      "x": 5,
+-      "y": 8,
+-      "elevation": 0,
+-      "dest_map": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
+-      "dest_warp_id": "1"
++      "flag": "FLAG_UNUSED_0x021"
+     },
+     {
+-      "x": 7,
+-      "y": 16,
+-      "elevation": 0,
+-      "dest_map": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
+-      "dest_warp_id": "0"
+-    }
+-  ],
+-  "coord_events": [
+-    {
+-      "type": "trigger",
+-      "x": 10,
+-      "y": 1,
++      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
++      "x": 14,
++      "y": 10,
+       "elevation": 3,
+-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+-      "var_value": "0",
+-      "script": "LittlerootTown_EventScript_NeedPokemonTriggerLeft"
++      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
++      "movement_range_x": 0,
++      "movement_range_y": 0,
++      "trainer_type": "TRAINER_TYPE_NONE",
++      "trainer_sight_or_berry_tree_id": "0",
++      "script": "Tilburg_EventScript_Salt",
++      "flag": "0"
+     },
+     {
+-      "type": "trigger",
+-      "x": 11,
+-      "y": 1,
++      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
++      "x": 16,
++      "y": 10,
+       "elevation": 3,
+-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+-      "var_value": "0",
+-      "script": "LittlerootTown_EventScript_NeedPokemonTriggerRight"
++      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
++      "movement_range_x": 0,
++      "movement_range_y": 0,
++      "trainer_type": "TRAINER_TYPE_NONE",
++      "trainer_sight_or_berry_tree_id": "0",
++      "script": "Tilburg_EventScript_Hlias",
++      "flag": "0"
+     },
+     {
+-      "type": "trigger",
+-      "x": 11,
+-      "y": 1,
++      "graphics_id": "OBJ_EVENT_GFX_RICH_BOY",
++      "x": 12,
++      "y": 13,
+       "elevation": 3,
+-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+-      "var_value": "1",
+-      "script": "LittlerootTown_EventScript_GoSaveBirchTrigger"
++      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
++      "movement_range_x": 0,
++      "movement_range_y": 0,
++      "trainer_type": "TRAINER_TYPE_NONE",
++      "trainer_sight_or_berry_tree_id": "0",
++      "script": "Tilburg_EventScript_Mert",
++      "flag": "0"
+     },
+     {
+-      "type": "trigger",
+-      "x": 8,
+-      "y": 9,
++      "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
++      "x": 14,
++      "y": 17,
+       "elevation": 3,
+-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+-      "var_value": "3",
+-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger4"
++      "movement_type": "MOVEMENT_TYPE_FACE_UP",
++      "movement_range_x": 0,
++      "movement_range_y": 0,
++      "trainer_type": "TRAINER_TYPE_NONE",
++      "trainer_sight_or_berry_tree_id": "0",
++      "script": "Tilburg_EventScript_Night",
++      "flag": "0"
+     },
+     {
+-      "type": "trigger",
+-      "x": 9,
+-      "y": 9,
++      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
++      "x": 11,
++      "y": 10,
+       "elevation": 3,
+-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+-      "var_value": "3",
+-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger5"
++      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
++      "movement_range_x": 0,
++      "movement_range_y": 0,
++      "trainer_type": "TRAINER_TYPE_NONE",
++      "trainer_sight_or_berry_tree_id": "0",
++      "script": "Tilburg_EventScript_Lev",
++      "flag": "0"
+     },
+     {
+-      "type": "trigger",
+-      "x": 10,
+-      "y": 9,
++      "graphics_id": "OBJ_EVENT_GFX_COOK",
++      "x": 2,
++      "y": 10,
+       "elevation": 3,
+-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+-      "var_value": "3",
+-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger2"
+-    },
++      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
++      "movement_range_x": 0,
++      "movement_range_y": 0,
++      "trainer_type": "TRAINER_TYPE_NONE",
++      "trainer_sight_or_berry_tree_id": "0",
++      "script": "Tilburg_EventScript_Mehmed",
++      "flag": "0"
++    }
++  ],
++  "warp_events": [
+     {
+-      "type": "trigger",
+-      "x": 11,
+-      "y": 9,
+-      "elevation": 3,
+-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+-      "var_value": "3",
+-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger3"
++      "x": 14,
++      "y": 8,
++      "elevation": 0,
++      "dest_map": "MAP_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
++      "dest_warp_id": "1"
+     },
+     {
+-      "type": "trigger",
+-      "x": 10,
+-      "y": 2,
+-      "elevation": 3,
+-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+-      "var_value": "3",
+-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger0"
++      "x": 5,
++      "y": 8,
++      "elevation": 0,
++      "dest_map": "MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F",
++      "dest_warp_id": "1"
+     },
+     {
+-      "type": "trigger",
+-      "x": 11,
+-      "y": 2,
+-      "elevation": 3,
+-      "var": "VAR_LITTLEROOT_TOWN_STATE",
+-      "var_value": "3",
+-      "script": "LittlerootTown_EventScript_GiveRunningShoesTrigger1"
++      "x": 7,
++      "y": 16,
++      "elevation": 0,
++      "dest_map": "MAP_LITTLEROOT_TOWN_PROFESSOR_BIRCHS_LAB",
++      "dest_warp_id": "0"
+     }
+   ],
++  "coord_events": [],
+   "bg_events": [
+     {
+       "type": "sign",
+@@ -269,4 +265,4 @@
+       "script": "LittlerootTown_EventScript_MaysHouseSign"
+     }
+   ]
+-}
++}
+\ No newline at end of file
+diff --git a/data/maps/LittlerootTown/scripts.inc b/data/maps/LittlerootTown/scripts.inc
+index 7009fbb..9fd0e35 100644
+--- a/data/maps/LittlerootTown/scripts.inc
++++ b/data/maps/LittlerootTown/scripts.inc
+@@ -1,4 +1,167 @@
+ LittlerootTown_MapScripts::
++	map_script MAP_SCRIPT_ON_FRAME_TABLE, Tilburg_OnFrame
++	.byte 0
++
++Tilburg_OnFrame:
++	map_script_2 VAR_UNUSED_0x404E, 0, Tilburg_EventScript_Welcome
++	.2byte 0
++
++@ ---------------------------------------------------------------- the welcome: Salt hands you your team
++Tilburg_EventScript_Welcome::
++	lockall
++	msgbox Tilburg_Text_Welcome, MSGBOX_DEFAULT
++	givemon SPECIES_BLAZIKEN, 33
++	givemon SPECIES_GARDEVOIR, 32
++	givemon SPECIES_FLYGON, 32
++	givemon SPECIES_AGGRON, 32
++	givemon SPECIES_MANECTRIC, 32
++	givemon SPECIES_MILOTIC, 32
++	setflag FLAG_SYS_POKEMON_GET
++	setflag FLAG_SYS_B_DASH
++	additem ITEM_HYPER_POTION, 10
++	additem ITEM_REVIVE, 5
++	playfanfare MUS_OBTAIN_ITEM
++	message Tilburg_Text_GotTeam
++	waitmessage
++	waitfanfare
++	msgbox Tilburg_Text_Welcome2, MSGBOX_DEFAULT
++	setvar VAR_UNUSED_0x404E, 1
++	releaseall
++	end
++
++@ ---------------------------------------------------------------- the cast
++Tilburg_EventScript_Salt::
++	trainerbattle_single TRAINER_TILBURG_SALT, Tilburg_Text_SaltIntro, Tilburg_Text_SaltDefeat
++	msgbox Tilburg_Text_SaltAfter, MSGBOX_AUTOCLOSE
++	end
++
++Tilburg_EventScript_Hlias::
++	trainerbattle_single TRAINER_TILBURG_HLIAS, Tilburg_Text_HliasIntro, Tilburg_Text_HliasDefeat
++	msgbox Tilburg_Text_HliasAfter, MSGBOX_AUTOCLOSE
++	end
++
++Tilburg_EventScript_Mert::
++	trainerbattle_single TRAINER_TILBURG_MERT, Tilburg_Text_MertIntro, Tilburg_Text_MertDefeat
++	msgbox Tilburg_Text_MertAfter, MSGBOX_AUTOCLOSE
++	end
++
++Tilburg_EventScript_Night::
++	trainerbattle_single TRAINER_TILBURG_NIGHT, Tilburg_Text_NightIntro, Tilburg_Text_NightDefeat
++	msgbox Tilburg_Text_NightAfter, MSGBOX_AUTOCLOSE
++	end
++
++Tilburg_EventScript_Lev::
++	trainerbattle_single TRAINER_TILBURG_LEV, Tilburg_Text_LevIntro, Tilburg_Text_LevDefeat
++	msgbox Tilburg_Text_LevAfter, MSGBOX_AUTOCLOSE
++	end
++
++Tilburg_EventScript_Mehmed::
++	trainerbattle_single TRAINER_TILBURG_MEHMED, Tilburg_Text_MehmedIntro, Tilburg_Text_MehmedDefeat
++	msgbox Tilburg_Text_MehmedAfter, MSGBOX_AUTOCLOSE
++	end
++
++@ ---------------------------------------------------------------- text
++Tilburg_Text_Welcome:
++	.string "SALT: yo. good evening gamer.\p"
++	.string "Welcome to TILBURG. This is the\n"
++	.string "BALKANS IRL server.\p"
++	.string "Everyone here will want to battle you.\n"
++	.string "You can't show up with no team, so\l"
++	.string "here. Take these.$"
++
++Tilburg_Text_GotTeam:
++	.string "{PLAYER} received a team\n"
++	.string "of six POKéMON!$"
++
++Tilburg_Text_Welcome2:
++	.string "SALT: HLIAS, MERT, NIGHT, LEV and\n"
++	.string "MEHMED are around town.\p"
++	.string "Beat them all, then come find me.\n"
++	.string "1.17 rating. Verified.$"
++
++Tilburg_Text_TownSign:
++	.string "TILBURG\n"
++	.string "Home of the BALKANS IRL server.$"
++
++Tilburg_Text_SaltIntro:
++	.string "SALT: You beat everyone? Good.\p"
++	.string "Now face the owner.\n"
++	.string "Salt super saiyan will activate.$"
++
++Tilburg_Text_SaltDefeat:
++	.string "1.17 rating and you still won.\n"
++	.string "gg.$"
++
++Tilburg_Text_SaltAfter:
++	.string "SALT: drip check passed.\n"
++	.string "You can stay in the server.$"
++
++Tilburg_Text_HliasIntro:
++	.string "HLIAS: GAH DAMN, a new member!\p"
++	.string "You look like you need some\n"
++	.string "boxing lessons, bro.$"
++
++Tilburg_Text_HliasDefeat:
++	.string "bro legit the most insane\n"
++	.string "shi I've ever seen.$"
++
++Tilburg_Text_HliasAfter:
++	.string "HLIAS: Kigali is so clean you can\n"
++	.string "eat on the road floor.\p"
++	.string "One day I take you there.$"
++
++Tilburg_Text_MertIntro:
++	.string "MERT: bro I was winning before\n"
++	.string "you even got here.$"
++
++Tilburg_Text_MertDefeat:
++	.string "I was winning.\n"
++	.string "This one does not count.$"
++
++Tilburg_Text_MertAfter:
++	.string "MERT: My cousin says losing is a\n"
++	.string "sign. A sign to bet more.$"
++
++Tilburg_Text_NightIntro:
++	.string "NIGHT: I haven't said a single word\n"
++	.string "but I already know where this\l"
++	.string "is going.$"
++
++Tilburg_Text_NightDefeat:
++	.string "Natural selection failed\n"
++	.string "me today.$"
++
++Tilburg_Text_NightAfter:
++	.string "NIGHT: Big brother is watching.\n"
++	.string "Mostly it is me.$"
++
++Tilburg_Text_LevIntro:
++	.string "LEV: As archbishop of the\n"
++	.string "BALKANS IRL orthodox church,\l"
++	.string "I challenge you.$"
++
++Tilburg_Text_LevDefeat:
++	.string "We are never making it out\n"
++	.string "of ignorance.$"
++
++Tilburg_Text_LevAfter:
++	.string "LEV: The means of production\n"
++	.string "belong to the trainers.$"
++
++Tilburg_Text_MehmedIntro:
++	.string "MEHMED: ong.$"
++
++Tilburg_Text_MehmedDefeat:
++	.string "ong.$"
++
++Tilburg_Text_MehmedAfter:
++	.string "MEHMED: hollon gang.$"
++
++LittlerootTown_Text_TownSign:
++	.string "TILBURG\n"
++	.string "Home of the BALKANS IRL server.$"
++
++LittlerootTown_MapScripts_Original::
+ 	map_script MAP_SCRIPT_ON_TRANSITION, LittlerootTown_OnTransition
+ 	map_script MAP_SCRIPT_ON_FRAME_TABLE, LittlerootTown_OnFrame
+ 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, LittlerootTown_OnWarp
+@@ -936,7 +1099,7 @@ LittlerootTown_Text_GoodLuckCatchingPokemon:
+ 	.string "Are you going to catch POKéMON?\n"
+ 	.string "Good luck!$"
+ 
+-LittlerootTown_Text_TownSign:
++LittlerootTown_Text_TownSign_Original:
+ 	.string "LITTLEROOT TOWN\n"
+ 	.string "“A town that can't be shaded any hue.”$"
+ 
+diff --git a/include/constants/opponents.h b/include/constants/opponents.h
+index c9cf923..d441394 100644
+--- a/include/constants/opponents.h
++++ b/include/constants/opponents.h
+@@ -861,7 +861,15 @@
+ //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
+ //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
+ 
+-#define TRAINERS_COUNT                      855
++// balkans_irl: the Tilburg cast
++#define TRAINER_TILBURG_SALT                855
++#define TRAINER_TILBURG_HLIAS               856
++#define TRAINER_TILBURG_MERT                857
++#define TRAINER_TILBURG_NIGHT               858
++#define TRAINER_TILBURG_LEV                 859
++#define TRAINER_TILBURG_MEHMED              860
++
++#define TRAINERS_COUNT                      861
+ #define MAX_TRAINERS_COUNT                  864
+ 
+ #endif  // GUARD_CONSTANTS_OPPONENTS_H
+diff --git a/src/data/region_map/region_map_sections.json b/src/data/region_map/region_map_sections.json
+index 4942612..b8d23d1 100644
+--- a/src/data/region_map/region_map_sections.json
++++ b/src/data/region_map/region_map_sections.json
+@@ -2,7 +2,7 @@
+   "map_sections": [
+     {
+       "id": "MAPSEC_LITTLEROOT_TOWN",
+-      "name": "LITTLEROOT TOWN",
++      "name": "TILBURG",
+       "x": 4,
+       "y": 11,
+       "width": 1,
+diff --git a/src/data/trainer_parties.h b/src/data/trainer_parties.h
+index 824a49d..3af70bb 100644
+--- a/src/data/trainer_parties.h
++++ b/src/data/trainer_parties.h
+@@ -12434,3 +12434,311 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayLinkPlaceholder[] = {
+     .species = SPECIES_KYOGRE,
+     }
+ };
++
++static const struct TrainerMonItemCustomMoves sParty_TilburgSalt[] = {
++    {
++    .iv = 255,
++    .lvl = 33,
++    .species = SPECIES_GYARADOS,
++    .heldItem = ITEM_MYSTIC_WATER,
++    .moves = {MOVE_DRAGON_DANCE,
++        MOVE_WATERFALL,
++        MOVE_EARTHQUAKE,
++        MOVE_BITE}
++    },
++    {
++    .iv = 255,
++    .lvl = 34,
++    .species = SPECIES_METAGROSS,
++    .heldItem = ITEM_METAL_COAT,
++    .moves = {MOVE_METEOR_MASH,
++        MOVE_PSYCHIC,
++        MOVE_EARTHQUAKE,
++        MOVE_AGILITY}
++    },
++    {
++    .iv = 255,
++    .lvl = 33,
++    .species = SPECIES_ALAKAZAM,
++    .heldItem = ITEM_TWISTED_SPOON,
++    .moves = {MOVE_PSYCHIC,
++        MOVE_CALM_MIND,
++        MOVE_FIRE_PUNCH,
++        MOVE_RECOVER}
++    },
++    {
++    .iv = 255,
++    .lvl = 33,
++    .species = SPECIES_HERACROSS,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_MEGAHORN,
++        MOVE_BRICK_BREAK,
++        MOVE_ROCK_SLIDE,
++        MOVE_ENDURE}
++    },
++    {
++    .iv = 255,
++    .lvl = 33,
++    .species = SPECIES_ABSOL,
++    .heldItem = ITEM_SCOPE_LENS,
++    .moves = {MOVE_SWORDS_DANCE,
++        MOVE_SLASH,
++        MOVE_SHADOW_BALL,
++        MOVE_QUICK_ATTACK}
++    },
++    {
++    .iv = 255,
++    .lvl = 35,
++    .species = SPECIES_SALAMENCE,
++    .heldItem = ITEM_DRAGON_FANG,
++    .moves = {MOVE_DRAGON_CLAW,
++        MOVE_DRAGON_DANCE,
++        MOVE_FLAMETHROWER,
++        MOVE_FLY}
++    }
++};
++
++static const struct TrainerMonItemCustomMoves sParty_TilburgHlias[] = {
++    {
++    .iv = 200,
++    .lvl = 30,
++    .species = SPECIES_MEDICHAM,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_HI_JUMP_KICK,
++        MOVE_CONFUSION,
++        MOVE_MEDITATE,
++        MOVE_DETECT}
++    },
++    {
++    .iv = 200,
++    .lvl = 30,
++    .species = SPECIES_PRIMEAPE,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_CROSS_CHOP,
++        MOVE_THRASH,
++        MOVE_KARATE_CHOP,
++        MOVE_FOCUS_ENERGY}
++    },
++    {
++    .iv = 200,
++    .lvl = 30,
++    .species = SPECIES_BRELOOM,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_MACH_PUNCH,
++        MOVE_HEADBUTT,
++        MOVE_LEECH_SEED,
++        MOVE_STUN_SPORE}
++    },
++    {
++    .iv = 200,
++    .lvl = 30,
++    .species = SPECIES_TROPIUS,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_RAZOR_LEAF,
++        MOVE_STOMP,
++        MOVE_WHIRLWIND,
++        MOVE_SYNTHESIS}
++    },
++    {
++    .iv = 200,
++    .lvl = 31,
++    .species = SPECIES_HARIYAMA,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_ARM_THRUST,
++        MOVE_FAKE_OUT,
++        MOVE_KNOCK_OFF,
++        MOVE_VITAL_THROW}
++    },
++    {
++    .iv = 200,
++    .lvl = 32,
++    .species = SPECIES_HITMONCHAN,
++    .heldItem = ITEM_BLACK_BELT,
++    .moves = {MOVE_MACH_PUNCH,
++        MOVE_SKY_UPPERCUT,
++        MOVE_THUNDER_PUNCH,
++        MOVE_BULK_UP}
++    }
++};
++
++static const struct TrainerMonItemCustomMoves sParty_TilburgMert[] = {
++    {
++    .iv = 200,
++    .lvl = 29,
++    .species = SPECIES_PERSIAN,
++    .heldItem = ITEM_AMULET_COIN,
++    .moves = {MOVE_PAY_DAY,
++        MOVE_FAKE_OUT,
++        MOVE_SCREECH,
++        MOVE_SLASH}
++    },
++    {
++    .iv = 200,
++    .lvl = 29,
++    .species = SPECIES_SABLEYE,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_FAINT_ATTACK,
++        MOVE_NIGHT_SHADE,
++        MOVE_FAKE_OUT,
++        MOVE_CONFUSE_RAY}
++    },
++    {
++    .iv = 200,
++    .lvl = 30,
++    .species = SPECIES_AMPHAROS,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_THUNDER_PUNCH,
++        MOVE_THUNDER_WAVE,
++        MOVE_COTTON_SPORE,
++        MOVE_SWIFT}
++    },
++    {
++    .iv = 200,
++    .lvl = 30,
++    .species = SPECIES_SWELLOW,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_AERIAL_ACE,
++        MOVE_QUICK_ATTACK,
++        MOVE_ENDEAVOR,
++        MOVE_DOUBLE_TEAM}
++    },
++    {
++    .iv = 200,
++    .lvl = 31,
++    .species = SPECIES_SLAKING,
++    .heldItem = ITEM_QUICK_CLAW,
++    .moves = {MOVE_SLASH,
++        MOVE_FAINT_ATTACK,
++        MOVE_YAWN,
++        MOVE_SLACK_OFF}
++    }
++};
++
++static const struct TrainerMonItemCustomMoves sParty_TilburgNight[] = {
++    {
++    .iv = 200,
++    .lvl = 30,
++    .species = SPECIES_NOCTOWL,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_HYPNOSIS,
++        MOVE_CONFUSION,
++        MOVE_REFLECT,
++        MOVE_TAKE_DOWN}
++    },
++    {
++    .iv = 200,
++    .lvl = 30,
++    .species = SPECIES_LUNATONE,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_PSYCHIC,
++        MOVE_HYPNOSIS,
++        MOVE_ROCK_THROW,
++        MOVE_COSMIC_POWER}
++    },
++    {
++    .iv = 200,
++    .lvl = 30,
++    .species = SPECIES_UMBREON,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_FAINT_ATTACK,
++        MOVE_CONFUSE_RAY,
++        MOVE_MEAN_LOOK,
++        MOVE_MOONLIGHT}
++    },
++    {
++    .iv = 200,
++    .lvl = 31,
++    .species = SPECIES_XATU,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_FUTURE_SIGHT,
++        MOVE_PSYCHIC,
++        MOVE_CONFUSE_RAY,
++        MOVE_NIGHT_SHADE}
++    }
++};
++
++static const struct TrainerMonItemCustomMoves sParty_TilburgLev[] = {
++    {
++    .iv = 200,
++    .lvl = 30,
++    .species = SPECIES_DUSCLOPS,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_NIGHT_SHADE,
++        MOVE_CONFUSE_RAY,
++        MOVE_CURSE,
++        MOVE_PURSUIT}
++    },
++    {
++    .iv = 200,
++    .lvl = 30,
++    .species = SPECIES_CLAYDOL,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_ANCIENT_POWER,
++        MOVE_PSYBEAM,
++        MOVE_COSMIC_POWER,
++        MOVE_SELF_DESTRUCT}
++    },
++    {
++    .iv = 200,
++    .lvl = 30,
++    .species = SPECIES_SCIZOR,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_METAL_CLAW,
++        MOVE_FURY_CUTTER,
++        MOVE_SWORDS_DANCE,
++        MOVE_QUICK_ATTACK}
++    },
++    {
++    .iv = 200,
++    .lvl = 31,
++    .species = SPECIES_URSARING,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_SLASH,
++        MOVE_FAINT_ATTACK,
++        MOVE_REST,
++        MOVE_SNORE}
++    }
++};
++
++static const struct TrainerMonItemCustomMoves sParty_TilburgMehmed[] = {
++    {
++    .iv = 200,
++    .lvl = 28,
++    .species = SPECIES_TORKOAL,
++    .heldItem = ITEM_CHARCOAL,
++    .moves = {MOVE_EMBER,
++        MOVE_SMOG,
++        MOVE_BODY_SLAM,
++        MOVE_PROTECT}
++    },
++    {
++    .iv = 200,
++    .lvl = 29,
++    .species = SPECIES_CAMERUPT,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_MAGNITUDE,
++        MOVE_EMBER,
++        MOVE_TAKE_DOWN,
++        MOVE_FOCUS_ENERGY}
++    },
++    {
++    .iv = 200,
++    .lvl = 29,
++    .species = SPECIES_ARCANINE,
++    .heldItem = ITEM_NONE,
++    .moves = {MOVE_FLAMETHROWER,
++        MOVE_BITE,
++        MOVE_EXTREME_SPEED,
++        MOVE_ROAR}
++    },
++    {
++    .iv = 200,
++    .lvl = 30,
++    .species = SPECIES_SNORLAX,
++    .heldItem = ITEM_LEFTOVERS,
++    .moves = {MOVE_BODY_SLAM,
++        MOVE_REST,
++        MOVE_SNORE,
++        MOVE_YAWN}
++    }
++};
+diff --git a/src/data/trainers.h b/src/data/trainers.h
+index b4c1b05..38d67f0 100644
+--- a/src/data/trainers.h
++++ b/src/data/trainers.h
+@@ -10260,4 +10260,76 @@ const struct Trainer gTrainers[] = {
+         .aiFlags = 0,
+         .party = NO_ITEM_DEFAULT_MOVES(sParty_MayLinkPlaceholder),
+     },
++
++    [TRAINER_TILBURG_SALT] =
++    {
++        .trainerClass = TRAINER_CLASS_LEADER,
++        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
++        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
++        .trainerName = _("SALT"),
++        .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION},
++        .doubleBattle = FALSE,
++        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
++        .party = ITEM_CUSTOM_MOVES(sParty_TilburgSalt),
++    },
++
++    [TRAINER_TILBURG_HLIAS] =
++    {
++        .trainerClass = TRAINER_CLASS_BLACK_BELT,
++        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
++        .trainerPic = TRAINER_PIC_BLACK_BELT,
++        .trainerName = _("HLIAS"),
++        .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION},
++        .doubleBattle = FALSE,
++        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
++        .party = ITEM_CUSTOM_MOVES(sParty_TilburgHlias),
++    },
++
++    [TRAINER_TILBURG_MERT] =
++    {
++        .trainerClass = TRAINER_CLASS_POKEFAN,
++        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
++        .trainerPic = TRAINER_PIC_POKEFAN_M,
++        .trainerName = _("MERT"),
++        .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION},
++        .doubleBattle = FALSE,
++        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
++        .party = ITEM_CUSTOM_MOVES(sParty_TilburgMert),
++    },
++
++    [TRAINER_TILBURG_NIGHT] =
++    {
++        .trainerClass = TRAINER_CLASS_PSYCHIC,
++        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
++        .trainerPic = TRAINER_PIC_PSYCHIC_M,
++        .trainerName = _("NIGHT"),
++        .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION},
++        .doubleBattle = FALSE,
++        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
++        .party = ITEM_CUSTOM_MOVES(sParty_TilburgNight),
++    },
++
++    [TRAINER_TILBURG_LEV] =
++    {
++        .trainerClass = TRAINER_CLASS_GENTLEMAN,
++        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
++        .trainerPic = TRAINER_PIC_GENTLEMAN,
++        .trainerName = _("LEV"),
++        .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION},
++        .doubleBattle = FALSE,
++        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
++        .party = ITEM_CUSTOM_MOVES(sParty_TilburgLev),
++    },
++
++    [TRAINER_TILBURG_MEHMED] =
++    {
++        .trainerClass = TRAINER_CLASS_KINDLER,
++        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
++        .trainerPic = TRAINER_PIC_KINDLER,
++        .trainerName = _("MEHMED"),
++        .items = {ITEM_HYPER_POTION, ITEM_HYPER_POTION},
++        .doubleBattle = FALSE,
++        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
++        .party = ITEM_CUSTOM_MOVES(sParty_TilburgMehmed),
++    },
+ };
+diff --git a/src/new_game.c b/src/new_game.c
+index 8074656..752bc4c 100644
+--- a/src/new_game.c
++++ b/src/new_game.c
+@@ -126,7 +126,9 @@ static void ClearFrontierRecord(void)
+ 
+ static void WarpToTruck(void)
+ {
+-    SetWarpDestination(MAP_GROUP(MAP_INSIDE_OF_TRUCK), MAP_NUM(MAP_INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);
++    // balkans_irl: a new game starts in Tilburg (Littleroot), with the old residents hidden
++    FlagSet(FLAG_UNUSED_0x021);
++    SetWarpDestination(MAP_GROUP(MAP_LITTLEROOT_TOWN), MAP_NUM(MAP_LITTLEROOT_TOWN), WARP_ID_NONE, 9, 9);
+     WarpIntoMap();
+ }
+ 
